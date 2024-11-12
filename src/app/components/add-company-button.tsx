@@ -1,13 +1,19 @@
-// font-weight: 500;
-// font-size: 16px;
-// line-height: 150%;
-// text-align: center;
-// color: #fafafa;
+'use client';
+
+import Button from './button';
+import Modal from './modal';
+
+import { useState } from 'react';
 
 export default function AddCompanyButton() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <button className="font-medium text-zinc-50 px-5 py-2.5 bg-gray-900 rounded">
-      Add company
-    </button>
+    <>
+      <Button onClick={() => setIsOpen(true)}>Add company</Button>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        Modal Content
+      </Modal>
+    </>
   );
 }
