@@ -12,3 +12,7 @@ body {
   background-color: #fafafa;
   color: #111827;
 }
+
+button {
+  outline: none;
+}

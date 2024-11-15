@@ -1,5 +1,6 @@
 'use client';
 
+import AddCompanyForm from './add-company-form';
 import Button from './button';
 import Modal from './modal';
 
@@ -12,7 +13,7 @@ export default function AddCompanyButton() {
     <>
       <Button onClick={() => setIsOpen(true)}>Add company</Button>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        Modal Content
+        <AddCompanyForm />
       </Modal>
     </>
   );
