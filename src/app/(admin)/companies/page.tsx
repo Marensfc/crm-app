@@ -1,11 +1,8 @@
 import * as React from 'react';
+import Header from '@/app/components/header';
 
 export interface CompaniesPageProps {}
 
 export default function CompaniesPage(props: CompaniesPageProps) {
-  return (
-    <div>
-      <h1>Companies page</h1>
-    </div>
-  );
+  return <Header>Companies</Header>;
 }

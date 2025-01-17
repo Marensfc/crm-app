@@ -1,11 +1,8 @@
 import * as React from 'react';
+import Header from '@/app/components/header';
 
 export interface DashboardPageProps {}
 
 export default function DashboardPage(props: DashboardPageProps) {
-  return (
-    <div>
-      <h1>Dashboard page</h1>
-    </div>
-  );
+  return <Header>Dashboard</Header>;
 }
