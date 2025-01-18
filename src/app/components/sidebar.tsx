@@ -20,7 +20,7 @@ export default function Sidebar({}: SidebarProps) {
   const pathname = usePathname();
 
   return (
-    <aside className="bg-gray-900 text-zinc-50 font-medium flex flex-col basis-60 h-screen flex-shrink-0 pt-9 pb-10 items-center">
+    <aside className="bg-gray-900 text-zinc-50 font-medium w-60 fixed h-screen flex flex-col flex-shrink-0 pt-9 pb-10 items-center">
       <Image className="mb-20" src={logo} alt="logo" width={122} height={24} />
       <ul className="self-start flex flex-col gap-7 pl-6 w-full">
         <SidebarItem
@@ -40,7 +40,7 @@ export default function Sidebar({}: SidebarProps) {
           Companies
         </SidebarItem>
       </ul>
-      <Link href="/" className="mt-auto flex gap-2">
+      <Link href="/" className="mt-auto inline-flex gap-2">
         <Image src={exitIcon} alt="Exit icon" width={18} height={18} />
         Exit
       </Link>

@@ -7,9 +7,9 @@ export interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="flex">
+    <>
       <Sidebar />
-      <div className="w-full">{children}</div>
-    </div>
+      <div className="ml-60">{children}</div>
+    </>
   );
 }
